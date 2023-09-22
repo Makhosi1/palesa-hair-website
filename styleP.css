@@ -1,61 +1,182 @@
-body{
-    background-color: rgb(236, 193, 208)
-    ;}
-h2{
-    color: steelblue; font-family: fantasy; text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
+body {
+    background-color: rgb(251, 232, 239);
+    font-family: 'Nunito', sans-serif;
+    color:black;
+}
+#header-background{
+    width: 100%;
+    height:auto;
+    background: url(IMG_0044.jpg);
+    
+}
+
+h2 {
+    color: rgb(164, 70, 180);
+    font-family: fantasy;
+    text-align: center;
 
 }
-img{
+
+.preheader h1 {
+    color: rgb(84, 6, 99);
+    
+    
+}
+
+.preheader {
+    text-align: center;
+    color: black;
+
+
+}
+
+.preheader nav li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+.search {
+    text-align: center;
+    margin: 40px;
+
+}
+
+.search input {
+    height: 40px;
+    width: 40%;
+    border: solid black;
+    border-radius: 20px;
+    padding-left: 20px;
+
+}
+.search button{
+    height: 30px;
+    width: 7%;
+    background-color: white;
+    border-radius: 20px;
+    border: solid black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+ button:hover{
+    background-color: rgb(187, 167, 222);
+    color:black;
+}
+
+
+img {
     align-content: center;
     border-radius: 5%;
 }
 
-    a:link{
-        color:darkmagenta;
-        background-color: transparent;
-        text-decoration: none;
-    
-    }
+a:link {
+    color: darkmagenta;
+    background-color: transparent;
+    text-decoration: none;
 
-    a:visited{
-        color: teal;
-        background-color: transparent;
-        text-decoration: none;
-    }
-    a:hoover{
-        color:rgb(0, 0, 255);
-        background-color: transparent;
-        text-decoration: none;
-    }
-    a:active{
-        color:yellow;
-        background-color: transparent;
-        text-decoration: none;
-    }
-    button{
-        background-color: cornsilk;
-        opacity: 6;
-    }
-    
-    th, td{
-        background-color: rgb(187, 167, 222);
-        border-radius: 10%;
-    }
+}
 
+a:visited {
+    color: rgb(98, 0, 128);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hoover {
+    color: rgb(0, 0, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+button {
+    background-color: cornsilk;
+    opacity: 6;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+
+
+}
+
+.picture {
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.y-video {
+    margin-left: 100px;
+    padding-top: 15px;
+    border-radius: 40px;
+}
+
+.product-info section {
+    text-align: center;
+    margin: 40px;
+
+
+}
+
+.product-info section h4{
+    font-size: larger;
+}
+
+.product-info section li{
+    list-style:disc;
+
+}
+
+th,
+caption{
+    font-weight: bold;
+    color: black;
+
+}
+td {
+    background-color: rgb(187, 167, 222);
+    border-radius: 10px;
+    color:black;
+}
+
+footer{
+    margin: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer button{
+    background-color: white;
+    width: 20%;
+    height: 30px;
+    margin-left: 40%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width:720px){
     .flex-container{
-        display: flex;
-       
+        flex-direction: column;}
 
-    }
+        footer button{
+            height: 60px;
 
-    .picture{
-        margin-right: 20px;
-        padding-top: 10px;
-    }
-    
-    .y-video{
-        margin-left: 100px ;
-        padding-top: 15px ;
-        border-radius: 40px;
-    }
-
+        }
+}
