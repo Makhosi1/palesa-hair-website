@@ -7,11 +7,24 @@ body {
     font-family: 'Nunito', sans-serif;
     color:black;
 }
-#header-background{
+#header{
     width: 100%;
     height:auto;
-    background: url(IMG_0044.jpg);
-    
+    border: solid blue;
+}
+#header .header{
+    display: flex;
+    flex-direction: row;
+}
+
+#header img{
+    width: 30px;
+    height: 30px;
+}
+#header h1{
+    font-size: 20px;
+    text-align: left;
+    color: rgb(84, 6, 99);
 }
 
 h2 {
@@ -22,7 +35,6 @@ h2 {
 }
 
 .preheader h1 {
-    color: rgb(84, 6, 99);
     
     
 }
@@ -34,10 +46,13 @@ h2 {
 
 }
 
-.preheader nav li {
+#header .header nav li {
     list-style: none;
     display: inline;
-    margin: 10px;
+    margin: 20px;
+    font-weight: 600;
+    padding-left:50px ;
+    align-items: center;
 }
 
 .search {
@@ -49,7 +64,7 @@ h2 {
 .search input {
     height: 40px;
     width: 40%;
-    border: solid black;
+    border: none;
     border-radius: 20px;
     padding-left: 20px;
 
@@ -69,10 +84,7 @@ h2 {
 }
 
 
-img {
-    align-content: center;
-    border-radius: 5%;
-}
+
 
 a:link {
     color: darkmagenta;
@@ -99,9 +111,75 @@ a:active {
     text-decoration: none;
 }
 
-button {
-    background-color: cornsilk;
-    opacity: 6;
+.sub-heading h3{
+    text-align: center;
+    color: rgb(164, 70, 180);
+    font-family: fantasy;
+}
+
+.avail-products {
+    /*border: solid blue;*/
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+
+.avail-products .products{
+    margin-left: 100px;
+    width: 30%;
+    margin-bottom: 50px;
+    
+   
+}
+
+.avail-products .product-img img{
+    width: 250px;
+    height: 270px;
+
+}
+section .products .info p{
+    width:50%;
+}
+
+
+/*.products{ 
+    display:inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between; 
+}
+
+.products{
+    display:inline-flex;
+    flex-direction: row;
+    
+   
+}
+.products img{
+    width: 250px;
+    height: 270px;
+    border-radius: 10px;
+    margin: 30px;
+    
+}
+.products  button{
+    text-align: left;
+    border: none;
+   background-color: rgb(171, 141, 223);
+   width: 40%;
+    height: 30px;
+    border-radius: 20px;
+    margin: 7px;
+}
+
+.product .info{
+    text-align: end;
 }
 
 
@@ -111,8 +189,7 @@ button {
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-
-
+    margin: 30px;
 }
 
 .picture {
@@ -128,7 +205,7 @@ button {
 
 .product-info section {
     text-align: center;
-    margin: 40px;
+    margin: 50px;
 
 
 }
@@ -139,6 +216,7 @@ button {
 
 .product-info section li{
     list-style:disc;
+    text-align: center;
 
 }
 

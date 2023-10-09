@@ -3,7 +3,7 @@
 
 <head>
     <meta name="description" content="Palesa's Hair">
-    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
     <title>Palesa's Hair</title>
     <link rel="stylesheet" href="styleP.css" />
 
@@ -12,52 +12,133 @@
 </head>
 
 <body>
-    <header id="header-background">
+    <section>
 
-        <div class="logo"> </div>
+        <header id="header">
+            <div class="header">
+            <img src="coco-tech-logo/png/logo-no-background.png" alt="company logo">
+            <h1> palesa </h1>
 
-        <div class="preheader">
+                <nav>
+                    <li><a href="" target="Home">Home</a></li>
+                    <li><a href="" traget=" Hair moisturiser">Moisturisers</a></li>
+                    <li><a href="" target="Conditioners">Conditioners</a></li>
+                </nav>
 
-            <h1> Palesa's Hair </h1>
+            <!--</div>
 
-            <nav>
-                <li><a href="" target="Home">Home</a></li>
-                <li><a href="" traget=" Hair moisturiser">Moisturisers</a></li>
-                <li><a href="" target="Conditioners">Conditioners</a></li>
-            </nav>
-
+        <div class="search">!-->
+            <form id="search">
+                <p>html java practice</p>
+                <input type="text" placeholder="Search" style="font-weight: 500;">
+                <button type="button" onclick="document.getElementById('search').innerHTML = 'Hello java'"> Find
+                </button>
+            </form>
         </div>
     </header>
-    <div class="search">
-        <form>
-            <input type="text" placeholder="Search" style="font-weight: 500;">
-            <button> Find </button>
-        </form>
+    </section>
+    <section class="sub-heading">
 
-        <h2>For your natural homemade hair products </h2>
+        <div>
+            <h2>For your natural homemade hair products </h2>
 
-    </div>
-
-    <div class="flex-container">
-
-
-        <div class="picture">
-            <img src="IMG_0042.jpg" alt="black child with plated afro hair" width="300" length="100" usemap="#hair">
-            <br>
-
-            <map name="hair">
-                <area shape="circle" coords="34,44,270,350" alt="hair buns" href="hair.htm">
-            </map> <br>
-        </div>
-        <div class="y-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dXdqAINoGqo?si=JluHmcCLcaTJ2-_m"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <h3> Available Products</h3>
         </div>
 
+    </section>
 
+    <section class="avail-products">
+
+        <div class="products">
+
+            <div class="product-img">
+                <img src="Images/nobrandmoist.png" alt="Picture of moisturiser with no labels">
+            </div>
+            <div class="info">
+                <h3>Hair moisturiser 250ml</h3>
+                <p> A hair mosituriser with good balance of water to hydrate your hair shafts
+                    &amp; oils to retain the moisture.
+                </p>
+            </div>
+            <!--<div class="select">!-->
+                <form>
+                    <button><input type="radio" class="One-timep" name="choose OTP or sub"
+                            value="One-time purchase £40" />
+                        <label> One-time purchase £40</label></button>
+                    <style margin="10px"></style><br>
+                    <button><input type="radio" class="sub" name="choose OTP or sub"
+                            value="Subscribe and save 10% £36.00" />
+                        <label> Subscribe and save 10% £36.00</label></button>
+                </form>
+            
+        </div>
+        <div class="products">
+
+            <div class="product-img">
+                <img src="Images/conditioner.jpeg" alt="Picture of conditioner with  labels">
+            </div>
+            <div class="info">
+                <h3>Leave-in conditioner 250ml</h3>
+                <p> This leave-in conditioners provide a final boost of hydration to hair, but also soften, define
+                    and
+                    lubricate your strands to aid in styling
+                </p>
+
+                <form>
+                    <button><input type="radio" class="One-timep" name="choose OTP or sub"
+                            value="One-time purchase £35" />
+                        <label> One-time purchase £35</label></button><br>
+                    <button><input type="radio" class="sub" name="choose OTP or sub"
+                        value="Subscribe and save 10% £31.50"/>
+                        <label> Subscribe and save 10% £31.50</label></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="products">
+
+            <div class="product-img">
+                <img src="Images/hair mask.png" alt="Picture of hair-mask with labels">
+            </div>
+            <div class="info">
+                <h3>Hair mask 250ml</h3>
+                <p> This hair mask is a richly intensive treatment designed to pump your hair full of natural oils and
+                    lipids for
+                    healthy, shiny and moisturised strands.
+                </p>
+                <form>
+                    <button><input type="radio" class="One-timep" name="choose OTP or sub"
+                            value="One-time purchase £35" />
+                        <label> One-time purchase £45</label></button> <br>
+                    <button><input type="radio" class="sub" name="choose OTP or sub"
+                        value="Subscribe and save 10% £40.50" />
+                        <label> Subscribe and save 10% £40.50</label></button>
+                </form>
+            </div>
+        </div>
+
+    </section>
     </div>
+    <section>
+        <div class="flex-container">
+            <div class="picture">
+                <img src="Images/IMG_0042.jpg" alt="black child with plated afro hair" width="300" length="100"
+                    usemap="#hair">
+                <br>
+
+                <map name="hair">
+                    <area shape="circle" coords="34,44,270,350" alt="hair buns" href="hair.htm">
+                </map> <br>
+            </div>
+            <div class="y-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dXdqAINoGqo?si=JluHmcCLcaTJ2-_m"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <div class="product-info">
         <section>
@@ -195,8 +276,8 @@
         <a href="#moisturiser"> Jump to Top</a><br>
         <a href="https://makhosi1.github.io/personal-website/BookLibrary.html" target="_blank"
             title="visit our blog section">Blog </a>
-        <a href="https://makhosi1.github.io/personal-website/BookLibrary.html" target="_blank"> <img src="blogpic.jpeg"
-                alt="image with the words blog"> </a> <br>
+        <a href="https://makhosi1.github.io/personal-website/BookLibrary.html" target="_blank"> <img
+                src="Images/blogpic.jpeg" alt="image with the words blog"> </a> <br>
 
         <button><a href="mailto:nomakhosimabusa@gmail.com" target="_blank">More questions send us
                 mail</a></button><br>
@@ -205,6 +286,9 @@
 
     </footer>
     </section>
+
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
